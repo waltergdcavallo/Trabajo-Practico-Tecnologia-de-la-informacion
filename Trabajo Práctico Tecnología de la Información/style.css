@@ -1,0 +1,334 @@
+header{
+    background: rgb(3,3,0);
+    background: linear-gradient(200deg, rgba(3,3,0,1) 8%, rgba(0,0,0,1) 95%, rgba(254,254,254,1) 100%);
+    position: sticky;
+    top: 0;
+    height: 4.375rem;
+    background-color: black;
+    box-shadow: 0 .3125rem 3.125rem 0 rgba(254,254,254,1);
+}
+
+.titulo a{
+    color: white;
+    text-align: center;
+    font-size: 100%;
+    font-weight: 600;
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    letter-spacing: 10px;
+    overflow: hidden;
+    text-decoration: none;
+}
+
+body{
+  background-color: black;
+}
+
+.bichito{
+    display:flex;
+    padding: 1rem auto;
+    box-sizing: border-box;
+    overflow: hidden;
+    align-items: center;
+    margin-top: 5%;
+}
+div p{
+    font-weight: 400;
+    font-family: "Lilita One", sans-serif;
+    font-style: normal;
+    color:white;
+    font-size: 3.125rem;
+    margin-top: 6%;
+    letter-spacing: .125rem;
+}
+
+
+/* IMAGEN EN TARJETAS */
+
+.verduras{
+    width: 80%;
+    height: 25rem;
+    margin-top: 6.25rem auto;
+    padding: 3.75rem;
+}
+
+.frutas{
+    width: 80%;
+    height: 25rem;
+    margin-top: 6.25rem auto;
+    padding: 3.75rem;
+}
+
+/* TARJETAS */
+
+.tarjeta1{
+    background-color: black;
+    box-shadow: .375rem .375rem .5rem 0 rgba(254,254,254,1);
+    margin: 2%;
+    width: 30%;
+    height: 60%;
+    border-radius: 10%;
+    margin-left: 10%;
+    margin-top: 2%;
+}
+
+.tarjeta2{
+    background-color: black;
+    box-shadow: .375rem .375rem .5rem 0 rgba(254,254,254,1);
+    margin: 2%;
+    width: 30%;
+    height: 60%;
+    border-radius: 10%;
+    margin-left: 20%;
+    margin-top: 2%;
+}
+
+/* TEXTOS DE TARJETAS */
+
+a{
+    text-decoration: none;
+  
+}
+.textoverdura{
+    display: none;
+    text-align: center;
+    text-decoration: none;
+}
+.tarjeta1 div h3{
+    margin-left: 36%;
+    color: white;
+    font-size: 250%;
+}
+.textofruta{
+    display: none;
+    text-align: center;
+    text-decoration: none;
+}
+.tarjeta2 div h3{
+    margin-left: 40%;
+    color: white;
+    font-size: 250%;
+}
+.tarjeta1 div h2{
+    display: none;
+    margin-left: 40%;
+    color: white;
+    font-size: 250%;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+      
+}
+.tarjeta2 div h2{
+    display: none;
+    margin-left: 40%;
+    color: white;
+    font-size: 250%;
+    font-family: "Lilita One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* FLECHAS */
+
+.material-symbols-outlined{
+    display: none;
+    color:black;
+    margin-left: 20%;
+}
+
+/* VISTA DE TARJETAS*/
+
+.tarjeta1:hover{
+    filter:blur(0);
+    transform: scale(1.1) rotateY(180deg);
+    transition: 1s;
+    .material-symbols-outlined{
+        color: white;
+        margin-left: 45%;
+        transition: 1s;
+        transform: rotateZ(360deg);
+        font-size: 4.375rem;
+    }
+    div h3{
+        display:none;
+    }
+    .verduras{
+        opacity: 0;
+        transition: 0.5s;
+    }
+    div h2{
+        display: block;
+        transform:rotateY(180deg);
+        font-size: 6.25rem;
+        margin-right: 18%;
+        margin-top: -60%;
+    }
+    
+}
+.tarjeta2:hover{
+   filter:blur(0);
+   transform: scale(1.1) rotateY(180deg);
+   transition: 1s;
+
+.material-symbols-outlined{
+    color: white;
+    margin-left: 44%;
+    transition: 1s;
+    transform: rotateZ(360deg);
+    font-size: 4.375rem;
+}
+div h3{
+    display: none;
+}
+.frutas{
+    opacity: 0;
+    transition: 0.5s;
+}
+div h2{
+    display: block;
+    transform:rotateY(180deg);
+    font-size: 6.25rem;
+    margin-right: 25%;
+    margin-top: -60%;
+}
+}
+
+footer{
+    text-align: center;
+    display: flex;
+}
+
+@media(max-width:1919px){
+    .tarjeta1:hover{
+        transform:rotateY(180deg);
+        transition: 1s;
+        p{
+            display: none;
+        }
+        .material-symbols-outlined{
+            margin-top: 38%;
+            margin-left: 38%;
+            transition: 1s;
+            font-size: 150px;
+            transform: rotateZ(360deg);
+        }
+        div h3{
+            display: none;
+        }
+        div h2{
+            display: block;
+            transform: rotateY(180deg);
+            margin-right: 25%;
+            font-size: 500%;
+            margin-top: 10%;
+        }
+    }
+    .tarjeta2:hover{
+        transform:rotateY(180deg);
+        transition: 1s;
+        p{
+            display: none;
+        }
+        .material-symbols-outlined{
+            margin-top: 38%;
+            margin-left: 38%;
+            transition: 1s;
+            font-size: 9.375rem;
+            transform: rotateZ(360deg);
+        }
+        div h3{
+            display: none;
+        }
+        div h2{
+            display: block;
+            transform: rotateY(180deg);
+            margin-right: 30%;
+            font-size: 500%;
+            margin-top: 10%;
+        }
+    }
+    .verduras{
+        display: none;
+    }
+    .frutas{
+        display: none;
+    }
+    .textoverdura{
+        display:block;
+        color: white;
+        text-align: center;
+        margin: 10%;
+        font-size: 250%;
+    }
+    .textofruta{
+        display:block;
+        color: white;
+        text-align: center;
+        margin: 10%;
+        font-size: 200%;
+    }
+    .tarjeta1 div h3{
+        display: block;
+        margin-left: 36%;
+        color: white;
+        font-size: 250%;
+    }
+    .tarjeta2 div h3{
+        display: block;
+        margin-left: 40%;
+        color: white;
+        font-size: 250%;
+    }
+}
+
+@media(max-width: 720px){
+    div p{
+        font-size: 1.25rem;
+    }
+    .titulo a{
+        font-size: 100%; 
+    }
+    div h2{
+        font-size: 1.25rem;
+    }
+    header{
+        height: 2.1875rem;
+    }
+   .tarjeta1{
+    height: 25rem;
+    p{
+        font-size: .9375rem;
+    }
+    div h3{
+        font-size: .625rem;
+    }
+   }
+   .tarjeta2{
+    height: 25rem;
+    p{
+        font-size: .75rem;
+    }
+    div h3{
+        font-size: .625rem;
+    }
+   }
+   .tarjeta1:hover{
+
+    div h2{
+        font-size: 1.5625rem;
+    }
+    .material-symbols-outlined{
+         font-size: 2.5rem;
+    }
+   }
+   .tarjeta2:hover{
+
+    div h2{
+        font-size: 1.5625rem;
+    }
+    .material-symbols-outlined{
+        font-size: 2.5rem;
+}
+   }
+}
